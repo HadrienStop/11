@@ -17,4 +17,9 @@ public class DivideBysubtractTricky implements DivideAlgorithm{
         }
         return result;
     }
+
+    @Override
+    public int getOperationCount() {
+        return operationCount;
+    }
 }
