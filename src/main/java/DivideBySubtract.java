@@ -1,15 +1,16 @@
-public class DivideBySubstract implements DivideAlgorithm {
+public class DivideBySubtract implements DivideAlgorithm {
     private int operationCount;
     private int result;
 
     @Override
     public int run(int numerator, int denominator) {
         result = 0;
+        operationCount = 0;
         while (numerator >= denominator){
             numerator = numerator - denominator;
             result += 1;
+            operationCount++;
         }
-        operationCount = result;
         return result;
     }
 

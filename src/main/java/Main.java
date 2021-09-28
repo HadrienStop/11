@@ -7,8 +7,8 @@ public class Main {
     private static Chrono chrono = new Chrono();
 
     public static void main(String args[]) throws IOException {
-        DivideAlgorithm divider = new NativeDivideAlgorithm();
-        Writer file = new FileWriter("divideNative.dat");
+        DivideAlgorithm divider = new DivideBySubtract();
+        Writer file = new FileWriter("divideBySubtract.dat");
 
         for (int i = 200_000; i < 10_000_000; i = i + 20_000) {
             chrono.restart();
