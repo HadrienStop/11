@@ -6,9 +6,9 @@ public class Main {
 
     private static Chrono chrono = new Chrono();
 
-    public static void main(String args[]) throws IOException {
-        DivideAlgorithm divider = new DivideBysubtractTricky();
-        Writer file = new FileWriter("divideBySubtractTricky.dat");
+    public static void main(String[] args) throws IOException {
+        DivideAlgorithm divider = new DivideByPowerOfTwo();
+        Writer file = new FileWriter("divideByPowerOfTwo.dat");
 
         for (int i = 200_000; i < 10_000_000; i = i + 20_000) {
             chrono.restart();
