@@ -11,7 +11,7 @@ public class DivideBysubtractTricky implements DivideAlgorithm{
         multiple = 1;
         while (numerator >= denominator){
             numerator = numerator - multiple * denominator;
-            result++;
+            result += multiple;
             multiple++;
             operationCount++;
         }
